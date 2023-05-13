@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modal-style.css">
+</head>
+<body>
+    <button class="button open-button">open modal</button>
+    <dialog class="modal" id="modal">
+        <h2>An interesting title</h2>
+        <p>lorem ipsum dolor sit amet consectet</p>
+        <p>lorem ipsum dolor sit amet consectet</p>
+        <button class="button close-button">close</button>
+        <!--forms can exist inside of the comment box-->
+        <form class="cm-form" method="dialog">
+            <label>Your name <input type="text" placeholder="put your name"></label>
+            <label>your email <input type="text" placeholder="put your email"></label>
+            <button class="button" type="submit">submit form</button>
+        </form>
+    </dialog>
+    
+    <script>
+        const modal = document.querySelector('#modal');
+        const openModal = document.querySelector('.open-button');
+        const closeModal = document.querySelector('.close-button');
+
+        openModal.addEventListener('click', ()=>{
+            modal.showModal();
+        })
+        //basic closing of a modal
+        closeModal.addEventListener('click', ()=>{
+            modal.close();
+        })
+        
+        //with a form inside the modal the submit for buttons acts as the close button
+        
+
+    </script>
+</body>
+</html>

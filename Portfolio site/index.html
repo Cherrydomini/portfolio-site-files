@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi I'm Domini</title>
+    <link rel="stylesheet" href="./style/style.css">
+    
+</head>
+<body>
+    <div class="wrapper" id="wrapper"> 
+        <nav id="nav" class="nav">
+            <!--change site to dark and light mode-->
+            <button onclick="darkmode()" style="float:right" id="dark">Too bright</button>
+            <button onclick="lightmode()" style="float:right" id="light">Too dark</button>
+            <ul>
+                <li class="subnav open-ab-modal">About Me</li>
+                    <dialog class="modal ab-modal" id="ab-modal">
+                        <h2>Hi, I'm Domini!</h2>
+                        <p> Originally from the american south east, i currently live in korea
+                            and have been for 5 years. I studied korean in Gwangju and go my master's
+                            degree is Busan at Dongseo university. I have had many different experiences
+                            over the years at various types of job, but have decided it is time to pursue
+                            my original passion of web development
+                        </p>
+                        <br>
+                        <p>In the past I did a few freelance jobs using simply html, css, and limited 
+                            javascript skills. After attending an IT academy in Korean i improved not only 
+                            my skills set and knowledge in web languages, but have also learned to do my 
+                            web development in korean as well. It is my goal when you come to this site that
+                            find a simple yet beautifully made site and it is my sincerest hope is that you
+                            walk away with a sense of who I am in consideration of whatever future projects 
+                            may by planning.
+                        </p>
+                        <br><br>
+                        <h3><i>Corinthians 13:13</i></h3>
+                        <p><i>And now these three remain: faith, hope and love.
+                            But the greatest of these is love.</i></p>
+                        <br>
+                        <button class="button close-ab-modal">Thank you!</button>
+                </dialog>
+                <li class="subnav open-cm-modal">Contact me</li>
+                    <dialog class="modal cm-modal" id="cm-modal"> <p>coming soon</p>
+                       <!-- <form class="cm-form" action="mailto:cherrydomini@gmail.com" method="post" enctype="text/plain">
+                        <fieldset>
+                            <legend>Contact me about business enquries!</legend>
+                            <label>First name <input type="text"></label>
+                            <label>Last name <input type="text"></label>
+                            <label>E-mail address <input type="email"></label>
+                            <Label for="text">Message</Label>
+                            <textarea id="messagetext" name="messagetext" rows="5"></textarea><br>
+                            <input class="submit" type="submit" value="send">
+                        </fieldset>-->
+                        </form>
+                        <button class="button close-cm-modal">Close</button>
+                    </dialog>
+                <li class="subnav open-r-modal">Resume</li>
+                <dialog class="modal r-modal" id="r-modal">
+                    <div class="resume-info">
+                        <h1>Domini Cherry</h1>
+                        <h4>Busanjin-gu, Busan, South Korea</h4>
+                    </div>
+                    <h3>Education</h3>
+                        <div class="inner-res education">
+                            <p><b>Dongseo University,2021</b></p>
+                            <p>Masters of Science: Computer Engineering</p>
+                            <p>Busan, South Korea</p>
+                            <br>
+                            <p><b>North Carolina Agricultural & Technical State University, 2017</b> </p>
+                            <p>Bachelors of Science: Electronics Technology</p>
+                            <p>Greensboro, NC</p>
+                        </div>
+                    <h3>Objective</h3>
+                       <div class="inner-res objective">
+                            <span>My objective is to use the years of educations and self study
+                                to procure a career in web development. I wish to hone my skills and 
+                                pick up new skills and abilities for the future.
+                            </span>
+                       </div> 
+                    <h3>Abilities</h3>
+                        <div class="inner-res abilities">
+                            <ul>
+                                <li>English/Korean communication</li>
+                                <li>Adaptability</li>
+                                <li>Team work</li>
+                                <li>Receptive of feedback</li>
+                                <li>Time management</li>
+                            </ul>
+                        </div>
+                    <h3>Technical Skills</h3>
+                        <div class="inner-res technical">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>React</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    <h3>Tools and Programs</h3>
+                        <div class="inner-res tools">
+                            <ul>
+                                <li>Github</li>
+                                <li>Figma</li>
+                                <li>VS code</li>
+                            </ul>
+                        </div>
+                    <h3>Professional Experience</h3>
+                        <div class="inner-res professional">
+                            <span>As a student at Korea IT Academy I participated in a final team project.
+                                Our assignment was to make a shopping mall site. We collaborated 
+                                on which features to add and make. My role was to make the main page. 
+                                I also provided various pieces informations to the team for the project.
+                            </span>
+                        </div>
+                    <button class="button close-r-modal">That's it!</button>
+                </dialog>
+            </ul>
+         </nav>
+        <div class="second">
+
+            <div id="window">
+                <div class="abstract-frame" id="abstract-frame">
+                    <iframe src="https://codepen.io/Cherryprogramer/full/OJBZGvW" title="clone of the 'abstract' website" allowfullscreen="true">
+                    </iframe><img class="aframe-close frame-close" id="aframe-close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAO9JREFUSEvtlNENglAMRQ+b6CY6iTqJo6iT6CY4irkJTQg++lpIxI/XTyg99La3HRtFtxGXBv6Z8k3qv5J6B1yBB/Cq/NkBuAH7WgeRGT8BFXwDFweuHOUqlOvCI+Dz0IUVLMHHUOUda+pEwCrkwdNQFYyC5+B6bvKGOrXZZ8AluBbPoirveOGy4Cl8ETQrtUGmM61te9FZ2Y6nUCuahmfApe3VjHUwPKut6tizTMTnX/BIxxGfpuERcA+YbTzLjOH34bzOnuwIWFAdCe9OG0Dw03AyZ6FL7eQWjL6MdBytlcpr4JRca5Kb1GvUS337AYNmNh/3EilWAAAAAElFTkSuQmCC"/>
+                    <button><a target="_blank" href="https://codepen.io/Cherryprogramer/full/OJBZGvW">visit</a></button>
+                </div>
+                <div class="color-frame" id="color-frame">
+                    <iframe src="https://codepen.io/Cherryprogramer/full/LYQQOaM" title="color changing squares solo project">
+                    </iframe><img class="cframe-close frame-close" id="cframe-close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAO9JREFUSEvtlNENglAMRQ+b6CY6iTqJo6iT6CY4irkJTQg++lpIxI/XTyg99La3HRtFtxGXBv6Z8k3qv5J6B1yBB/Cq/NkBuAH7WgeRGT8BFXwDFweuHOUqlOvCI+Dz0IUVLMHHUOUda+pEwCrkwdNQFYyC5+B6bvKGOrXZZ8AluBbPoirveOGy4Cl8ETQrtUGmM61te9FZ2Y6nUCuahmfApe3VjHUwPKut6tizTMTnX/BIxxGfpuERcA+YbTzLjOH34bzOnuwIWFAdCe9OG0Dw03AyZ6FL7eQWjL6MdBytlcpr4JRca5Kb1GvUS337AYNmNh/3EilWAAAAAElFTkSuQmCC"/>
+                    <button><a target="_blank" href="https://codepen.io/Cherryprogramer/full/LYQQOaM">visit</a></button>
+                </div>
+            </div>
+        </div> 
+       <div class="intro">
+            <div id="name">
+                <h1 >Hi, I'm Domini </h1>
+                <h2>Frontend Developer</h2>
+            </div>
+       </div>
+        <div class="third">    
+            <div id="list">
+                <ul class="skills">
+                    <li class="menu" id="menu"><p>Clone and solo project sites</p>
+                        <ul class="sub_skills" id="sub_skills">
+                            <li class="open-abstract">abstract(clone)</a></li>
+                            <li class="open-color">color changing site(solo)</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li class="menu" id="menu"><p>Team Project</p>
+                        <ul class="sub_skills" id="sub_skills">
+                            <li class="open-teamModal"><p>clone site image</p></li>
+                            <dialog class="tmodal team-site" id="team-site">
+                                <div>
+                                    <img class="team-img" src="./images/main-page-teamproject.jpeg">
+                                </div>
+                                <button class="button close-teamModal" style="float:right;">close</button>
+                            </dialog>
+                            <li><a id="team-code" target="_blank" href="https://github.com/Cherrydomini/team-project">code</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu" id="menu"><p>Go To My...</p>
+                       <ul class="sub_skills" id="sub_skills">
+                        <li><a id="git" target="_blank" href="https://github.com/Cherrydomini">Github</a></li>
+                        <li><a id="pen" target="_blank" href="https://codepen.io/Cherryprogramer"><p>CodePen</p></a></li>
+                       </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer" id="footer"></footer>
+       
+    </div>
+
+    <script src="./Javascript/portfolioJS.js"></script>
+</body>
+</html>
